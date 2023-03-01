@@ -16,37 +16,39 @@ body {
 #generated-pass-container{
     display: flex;
     justify-content: space-between;
-    margin: 40px 0px;
-    padding-bottom: 50px;
+    margin: 10px 0px 0px;
+    padding: 100px 0px 50px;
     box-sizing: border-box;
-    border-bottom: 1px solid #023047;
+    border-top: 2px solid #023047;
+    border-bottom: 2px solid #023047;
 }
 .generated-pass{
     width: 250px;
-    height: 50px;
+    height: 40px;
     box-sizing: border-box;
     border-radius: 10px;
     border: none;
 }
 h2{
-    font-size: 20px;
+    font-size: 18px;
     color: #EDF5E1;
     text-shadow: 0px 0px 2px #023047;
 }
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #EDF5E1;
     text-shadow: 0px 0px 1px #023047;
 }
 span{
+    font-size: 55px;
     display: block;
     color: #023047;
 }
 #generate-password{
-    width: 280px;
+    width: 250px;
     height: 50px;
-    font-size: 24px;
-    padding: 4px 8px;
+    font-size: 20px;
+    padding: 4px 10px;
     box-sizing: border-box;
     font-family: inherit;
     color: #EDF5E1;
@@ -56,7 +58,7 @@ span{
     border-radius: 10px;
 }
 #generate-password:active{
-    font-size: 23.8px;
+    font-size: 19.8px;
     box-shadow: none;
     box-shadow: 0px 0px 1px #EDF5E1;
 }
@@ -77,7 +79,7 @@ h4{
 p{
     font-size: 14px;
     position: absolute;
-    top: 26rem;
+    top: 29rem;
     color: rgb(150, 150, 150);
 }
 .copy-btn{
@@ -89,6 +91,74 @@ p{
 }
 .copy-btn:active{
     border: 1px solid black;
+}
+#modif-pass{
+    position: absolute;
+    top: 335px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+label{
+    font-size: 15px;
+    color: #EDF5E1;
+}
+#checkboxes{
+    margin: 10px 0px;
+    display: flex;
+}
+.labels{
+    margin-left: 80px;
+}
+#pass-length{
+    text-align: start;
+    font-size: 14px;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    width: 60px;
+    border: 1px solid #023047;
+    border-radius: 3px;
+}
+#checkbox-symbols{
+    position: relative;
+    top: -1.15rem;
+    left: 7.76rem;
+    background-color: #023047;
+    width: 14.5px;
+    height: 14.5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+#checkbox-numbers{
+    position: relative;
+    top: -1.2rem;
+    left: 8rem;
+    background-color: #023047;
+    width: 14.5px;
+    height: 14.5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+#checkbox-symbols:hover, #checkbox-numbers:hover{
+    border: 1px solid #EDF5E1;
+}
+#exclude-numbers{
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px 0px 0px 5px;
+}
+#exclude-symbols{
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px 0px 0px 5px;
+}
+input[type='checkbox']{
+    accent-color: #023047;
+}
+input[type='checkbox']:hover{
+    accent-color: #035985;
 }
 @media screen and (max-width: 600px) {
     .container{
@@ -105,6 +175,9 @@ p{
         font-size: 12px;
     }
     h1{
+        font-size: 25px;
+    }
+    span{
         font-size: 30px;
     }
     #generate-password{
@@ -118,18 +191,18 @@ p{
     }
     #generated-pass-container{
         margin: 20px 0px 0px;
-        padding: 0px 0px 30px;
+        padding: 50px 0px 30px;
     }
     input{
         font-size: 12px;
         height: 25px;
     }
     h4{
-        font-size: 10px;
+        font-size: 8px;
     }
     p{
-        font-size: 10px;
-        top: 14.5rem;
+        font-size: 8px;
+        top: 17.5rem;
     }
     .copy-btn{
         font-family: inherit;
@@ -140,5 +213,52 @@ p{
     }
     .copy-btn:active{
         border: 1px solid black;
+    }
+    #modif-pass{
+        top: 200px;
+        margin-left: 25px;
+    }
+    label{
+        font-size: 8px;
+    }
+    #pass-length{
+        font-size: 8px;
+        padding: 0px 0px 0px 2px;
+        box-sizing: border-box;
+        width: 35px;
+        height: 12px;
+    }
+    #checkboxes{
+        margin: 5px 0px;
+    }
+    .labels{
+        margin-left: 20px;
+    }
+    #checkbox-symbols{
+        top: -0.8rem;
+        left: 4.3rem;
+        width: 10px;
+        height: 10px;
+    }
+    #checkbox-numbers{
+        top: -0.78rem;
+        left: 4.4rem;
+        width: 10px;
+        height: 10px;
+    }
+    #checkbox-symbols:hover, #checkbox-numbers:hover{
+        border: 1px solid #EDF5E1;
+    }
+    #exclude-numbers{
+        width: 10px;
+        height: 10px;
+        padding: 0px;
+        margin: 0px 0px 0px 5px;
+    }
+    #exclude-symbols{
+        width: 10px;
+        height: 10px;
+        padding: 0px;
+        margin: 0px 0px 0px 5px;
     }
 }
