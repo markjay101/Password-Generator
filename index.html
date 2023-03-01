@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/x-icon" href="Assets/title-icon.png"/>
+</head>
+<body>
+    <div class="container"> 
+        <h1 id="header-text">Generate a <span>random password</span></h1>
+        <h2>Never use an insecure password ever again.</h2>
+        <button id="generate-password">Generate Password</button>
+        <div id="generated-pass-container"> 
+            <button class="copy-btn" id="copy-first-pass-btn"><input type="text" class="generated-pass" id="first-generated-pass"/></button>
+            <button class="copy-btn" id="copy-second-pass-btn"><input type="text" class="generated-pass" id="second-generated-pass"/></button>
+        </div>
+        <h4>Creator: Mark Jay</h4>
+        <p id="text-hint1">#Click any of the generated password.</p>
+        <p id="text-hint2">#Password successfully copied.</p>
+        <p id="text-hint3">#Click the generate password first.</p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
